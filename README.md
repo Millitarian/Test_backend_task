@@ -11,9 +11,21 @@
 2. Установить зависимости:
     poetry install
 
-3. Ввести данные для подключений в .env файл
+3. Создать .env файл в корневой директории проекта:
+   Содержимое .env:
+       DATABASE_HOST = "localhost"
+       DATABASE_PORT = "5432"
+       DATABASE_USERNAME = "postgres"
+       DATABASE_PASSWORD = "postgres"
+       DATABESE_NAME = "backendTask"
+       RABBITMQ_HOST = "localhost"
+       RABBITMQ_PORT = "5672"
+       RABBITMQ_USERNAME = "guest"
+       RABBITMQ_PASSWORD = "guest"
+       RADIS_HOST = "localhost"
+       RADIS_PORT = "6379"
 
 
-4. Запустить проект:
+5. Запустить проект:
     uvicorn main:app
 
